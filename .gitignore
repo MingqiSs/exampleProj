@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs
+/ConsoleApp/obj
+/ConsoleApp/bin/Debug/netcoreapp3.1
+/example.ws/bin/Debug/netcoreapp3.1
+/example.ws/obj
+/example.ws/Properties
+/exapmle.RabbitMQ/obj
+/exapmle.RabbitMQ2/obj
+/exapmle.socket/bin/Debug/netcoreapp3.1
+/exapmle.socket/obj
+/Infrastructure/bin/Debug/netcoreapp3.1
+/Infrastructure/obj

@@ -1,0 +1,4 @@
+{ "createtime": "2021-04-29 17:57:12.8922", "level": "INFO", "message": "启动服务", "method": "example.SocketService.MarketClient.WSClient_ReConnect" }
+{ "createtime": "2021-04-29 17:57:14.3717", "level": "INFO", "message": "Accept Receive Client:127.0.0.1:64543 Total:1", "method": "example.SocketService.SocketService.Accept" }
+{ "createtime": "2021-04-29 17:57:21.9516", "level": "INFO", "message": "Client Connected 127.0.0.1:64543:远程主机强迫关闭了一个现有的连接。", "method": "example.SocketService.SocketClient.Receive" }
+{ "createtime": "2021-04-29 17:57:21.9516", "level": "INFO", "message": "RemoveSocketClient=>127.0.0.1:64543 Total:0", "method": "example.SocketService.SocketService.RemoveSocketClient" }
