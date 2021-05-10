@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace ConsoleApp
@@ -14,6 +15,7 @@ namespace ConsoleApp
             //Console.WriteLine(string.Join(",", s));
 
 
+            GetTypeDe();
 
 
             Console.ReadLine();
@@ -35,5 +37,43 @@ namespace ConsoleApp
             s[s.Length - 1 - i] = temp;
             ReverseString(s, i + 1);
         }
+
+        public static void GetTypeDe()
+        {
+            var Watch = new Stopwatch();
+            object objName = string.Empty;
+
+
+            var type = GetPerson().GetType();
+            Watch.Start();
+            for (int i = 0; i < 1000000; i++)
+            {
+                objName = type.GetProperty("Name").GetValue(GetPerson());
+            }
+            Watch.Stop();
+            Console.WriteLine(Watch.Elapsed);
+
+
+           dynamic  dynPerson = GetPerson();
+            Watch.Restart();
+            for (int i = 0; i < 1000000; i++)
+            {
+                objName = dynPerson.Name;
+            }
+            Watch.Stop();
+            Console.WriteLine(Watch.Elapsed);
+
+        }
+        static object GetPerson()
+        {
+            return new Person { Name = "Leo" };
+        }
     }
+    public class Person
+    {
+        public string Name { get; set; }
+
+    }
+
+
 }

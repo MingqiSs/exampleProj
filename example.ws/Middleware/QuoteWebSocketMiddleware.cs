@@ -88,6 +88,7 @@ namespace example.ws.Middleware
                         pars[1] = customSocket;
                         pars[2] = messageEntity;
                         InvokeInstruction(code.ToString(), pars);
+                        var dynamic= this;
                     });
                 }
             }
