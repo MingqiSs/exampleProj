@@ -29,6 +29,9 @@ namespace example.ws.Middleware
             _webSocketHandler = webSocketConnectionManager;
             _logger = logger;
         }
+        //请求步骤
+        //1:建立连接: wss:localhost:44332/ws?u=123
+        //2:发送指令: {"D":null,"T":3,"R":null}
         public async Task Invoke(HttpContext context)
         {
             if (!(context.WebSockets.IsWebSocketRequest || context.Request.Path == routePostfix))
@@ -51,6 +54,8 @@ namespace example.ws.Middleware
                 context.Response.StatusCode = 501;
                 return;
             }
+            var json = new MessageEntity() { };
+           var f= JsonConvert.SerializeObject(json);
             //创建webSocket连接
             var socket = await context.WebSockets.AcceptWebSocketAsync();
             _webSocketHandler.OnConnected(socket, uuId, string.Empty, ip);

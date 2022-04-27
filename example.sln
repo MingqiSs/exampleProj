@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example.ws", "example.ws\example.ws.csproj", "{B77BBDC3-48E3-4BA7-AF00-B18314F7016A}"
 EndProject
@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example.SocketService", "ex
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mq", "mq", "{D94413F0-C186-4DFC-BBDA-4F4009036A08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exapmle.RabbitMQ", "exapmle.RabbitMQ\exapmle.RabbitMQ.csproj", "{8CA26031-52BE-40FC-AB43-53E81CA31B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exapmle.RabbitMQ", "exapmle.RabbitMQ\exapmle.RabbitMQ.csproj", "{8CA26031-52BE-40FC-AB43-53E81CA31B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exapmle.RabbitMQ2", "exapmle.RabbitMQ2\exapmle.RabbitMQ2.csproj", "{3BDBA8AE-70FE-4948-BA34-098298FF5231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exapmle.RabbitMQ2", "exapmle.RabbitMQ2\exapmle.RabbitMQ2.csproj", "{3BDBA8AE-70FE-4948-BA34-098298FF5231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{D5EA35BA-6165-408E-BE0E-2AC466CEA810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{D5EA35BA-6165-408E-BE0E-2AC466CEA810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
